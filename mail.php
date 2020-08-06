@@ -37,9 +37,4 @@ if(!$mail->send()) {
     header('location: thank-you.html');
 }
 ?>
-<?php
-if ( $request_method !~ ^POST$ ) {
-add_header Allow “POST” always;
-return 405;
-}
-?>
+
